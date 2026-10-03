@@ -1,0 +1,26 @@
+name: Update Sitemap
+
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-sitemap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate sitemap
+        run: python3 generate_sitemap.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "sitemap-bot"
+          git config user.email "actions@github.com"
+          git add sitemap.xml
+          git diff --staged --quiet || git commit -m "Auto-update sitemap"
+          git push
