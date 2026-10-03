@@ -32,6 +32,7 @@ def collect_urls(sitemap_url, collected):
 if __name__ == "__main__":
     collected = {}
     collect_urls("https://www.musabase.com/sitemap.xml", collected)
+    collect_urls("https://www.musabase.com/sitemap-pages.xml", collected)
 
     urls_xml = "\n".join(
         f"  <url><loc>{loc}</loc><lastmod>{lastmod}</lastmod></url>"
