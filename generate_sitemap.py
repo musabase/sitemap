@@ -2,16 +2,24 @@ import json
 import urllib.request
 from datetime import datetime, timezone
 
-POSTS_FEED = "https://www.musabase.com/feeds/posts/default?alt=json&max-results=500"
-PAGES_FEED = "https://www.musabase.com/feeds/pages/default?alt=json&max-results=500"
-
-def fetch_entries(feed_url, label):
-    req = urllib.request.Request(feed_url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req) as response:
-        data = json.loads(response.read().decode("utf-8"))
-    entries = data.get("feed", {}).get("entry", [])
-    print(f"[{label}] Raw entries returned by feed: {len(entries)}")
-    return entries
+def fetch_all_entries(feed_base_url, label, page_size=100):
+    all_entries = []
+    start_index = 1
+    while True:
+        url = f"{feed_base_url}?alt=json&max-results={page_size}&start-index={start_index}"
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req) as response:
+            data = json.loads(response.read().decode("utf-8"))
+        batch = data.get("feed", {}).get("entry", [])
+        print(f"[{label}] Fetched {len(batch)} entries starting at index {start_index}")
+        if not batch:
+            break
+        all_entries.extend(batch)
+        if len(batch) < page_size:
+            break
+        start_index += page_size
+    print(f"[{label}] Total entries collected: {len(all_entries)}")
+    return all_entries
 
 def extract_url(entry):
     for link in entry.get("link", []):
@@ -60,13 +68,13 @@ def build_sitemap(entries):
         + "\n".join(urls)
         + "\n</urlset>\n"
     )
-    return xml
+    return xml, len(urls)
 
 if __name__ == "__main__":
-    posts = fetch_entries(POSTS_FEED, "posts")
-    pages = fetch_entries(PAGES_FEED, "pages")
+    posts = fetch_all_entries("https://www.musabase.com/feeds/posts/default", "posts")
+    pages = fetch_all_entries("https://www.musabase.com/feeds/pages/default", "pages")
     all_entries = posts + pages
-    sitemap_xml = build_sitemap(all_entries)
+    sitemap_xml, url_count = build_sitemap(all_entries)
     with open("sitemap.xml", "w", encoding="utf-8") as f:
         f.write(sitemap_xml)
-    print(f"\nGenerated sitemap with {len(urls_in := sitemap_xml.count('<url>'))} entries ({len(posts)} raw posts, {len(pages)} raw pages)")
+    print(f"\nGenerated sitemap with {url_count} URLs ({len(posts)} raw posts, {len(pages)} raw pages)")
