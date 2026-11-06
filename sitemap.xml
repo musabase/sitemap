@@ -1,12 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.musabase.com/2026/11/hyde-hyprland-dotfiles-on-nixos.html</loc><lastmod>2026-11-05T17:17:02Z</lastmod></url>
   <url><loc>https://www.musabase.com/2026/10/install-end4-pc-dotfiles-on-hyprland.html</loc><lastmod>2026-10-27T21:12:26Z</lastmod></url>
-  <url><loc>https://www.musabase.com/2026/10/install-end-4-hyprland-dotfiles-on-nixos.html</loc><lastmod>2026-10-27T21:17:33Z</lastmod></url>
+  <url><loc>https://www.musabase.com/2026/10/install-end-4-hyprland-dotfiles-on-nixos.html</loc><lastmod>2026-11-05T17:15:04Z</lastmod></url>
   <url><loc>https://www.musabase.com/2026/10/install-end-4-kde-dots-on-arch-linux.html</loc><lastmod>2026-10-23T09:46:31Z</lastmod></url>
   <url><loc>https://www.musabase.com/2026/09/install-caelestia-kde-dots-on-arch-linux.html</loc><lastmod>2026-10-23T09:47:02Z</lastmod></url>
-  <url><loc>https://www.musabase.com/2026/09/install-caelestia-dotfiles-on-nixos.html</loc><lastmod>2026-10-23T09:47:17Z</lastmod></url>
-  <url><loc>https://www.musabase.com/2026/09/install-ml4w-hyprland-dotfiles-on-nixos.html</loc><lastmod>2026-10-23T09:47:29Z</lastmod></url>
-  <url><loc>https://www.musabase.com/2026/09/install-jakoolit-hyprland-dotfiles-on-nixos.html</loc><lastmod>2026-10-23T09:47:47Z</lastmod></url>
+  <url><loc>https://www.musabase.com/2026/09/install-caelestia-dotfiles-on-nixos.html</loc><lastmod>2026-11-05T17:14:53Z</lastmod></url>
+  <url><loc>https://www.musabase.com/2026/09/install-ml4w-hyprland-dotfiles-on-nixos.html</loc><lastmod>2026-11-05T17:15:21Z</lastmod></url>
+  <url><loc>https://www.musabase.com/2026/09/install-jakoolit-hyprland-dotfiles-on-nixos.html</loc><lastmod>2026-11-05T17:15:31Z</lastmod></url>
   <url><loc>https://www.musabase.com/2026/08/protonup-qt-and-ge-proton-on-arch-linux.html</loc><lastmod>2026-10-23T09:47:58Z</lastmod></url>
   <url><loc>https://www.musabase.com/2026/08/jakoolit-hyprland-flatpak-setup-flathub.html</loc><lastmod>2026-10-23T09:48:07Z</lastmod></url>
   <url><loc>https://www.musabase.com/2026/06/how-to-manually-install-caelestia-dotfiles-on-hyprland.html</loc><lastmod>2026-10-23T09:48:24Z</lastmod></url>
@@ -30,7 +31,7 @@
   <url><loc>https://www.musabase.com/2026/01/fix-slow-pacman-downloads-arch-linux.html</loc><lastmod>2026-10-23T09:52:29Z</lastmod></url>
   <url><loc>https://www.musabase.com/2025/12/install-kde-plasma-on-arch-linux.html</loc><lastmod>2026-10-23T09:52:40Z</lastmod></url>
   <url><loc>https://www.musabase.com/2025/12/how-to-install-fedora-silverblue.html</loc><lastmod>2026-10-23T09:52:51Z</lastmod></url>
-  <url><loc>https://www.musabase.com/2025/11/how-to-install-nixos.html</loc><lastmod>2026-10-23T09:53:00Z</lastmod></url>
+  <url><loc>https://www.musabase.com/2025/11/how-to-install-nixos.html</loc><lastmod>2026-11-05T17:19:28Z</lastmod></url>
   <url><loc>https://www.musabase.com/2025/11/how-to-install-xfce-on-openbsd.html</loc><lastmod>2026-10-23T09:53:09Z</lastmod></url>
   <url><loc>https://www.musabase.com/2025/11/how-to-install-xfce-on-freebsd.html</loc><lastmod>2026-10-23T09:53:18Z</lastmod></url>
   <url><loc>https://www.musabase.com/2025/10/how-to-install-end-4-hyprland-dotfiles-on-arch-linux.html</loc><lastmod>2026-10-27T21:16:02Z</lastmod></url>
@@ -46,7 +47,7 @@
   <url><loc>https://www.musabase.com/2025/07/how-to-install-gentoo-most-complex-os.html</loc><lastmod>2026-10-23T09:55:26Z</lastmod></url>
   <url><loc>https://www.musabase.com/2025/06/install-debian-the-hard-way.html</loc><lastmod>2026-10-23T09:55:38Z</lastmod></url>
   <url><loc>https://www.musabase.com/2025/06/how-to-automate-minimal-arch-linux.html</loc><lastmod>2026-10-23T09:55:50Z</lastmod></url>
-  <url><loc>https://www.musabase.com/2025/06/arch-linux-with-hyprland-hyde-project.html</loc><lastmod>2026-10-23T09:56:02Z</lastmod></url>
+  <url><loc>https://www.musabase.com/2025/06/arch-linux-with-hyprland-hyde-project.html</loc><lastmod>2026-11-05T17:18:03Z</lastmod></url>
   <url><loc>https://www.musabase.com/2025/05/how-to-install-hyprland-ml4w-on-arch-linux.html</loc><lastmod>2026-10-23T09:56:16Z</lastmod></url>
   <url><loc>https://www.musabase.com/2025/05/single-gpu-passthrough-on-vm.html</loc><lastmod>2026-10-23T09:56:29Z</lastmod></url>
   <url><loc>https://www.musabase.com/2025/04/how-to-install-linux-distribution-on.html</loc><lastmod>2026-10-23T09:56:41Z</lastmod></url>
@@ -61,7 +62,7 @@
   <url><loc>https://www.musabase.com/p/linux-gaming-roadmap-complete-musabase.html</loc><lastmod>2026-09-29T20:22:19Z</lastmod></url>
   <url><loc>https://www.musabase.com/p/complete-arch-linux-roadmap.html</loc><lastmod>2026-10-08T11:46:06Z</lastmod></url>
   <url><loc>https://www.musabase.com/p/linux-virtualization-qemukvm-complete.html</loc><lastmod>2026-09-29T20:15:52Z</lastmod></url>
-  <url><loc>https://www.musabase.com/p/best-hyprland-dotfiles-for-linux.html</loc><lastmod>2026-10-27T21:19:38Z</lastmod></url>
+  <url><loc>https://www.musabase.com/p/best-hyprland-dotfiles-for-linux.html</loc><lastmod>2026-11-05T17:18:50Z</lastmod></url>
   <url><loc>https://www.musabase.com/p/term-of-service.html</loc><lastmod>2026-01-18T19:39:27Z</lastmod></url>
   <url><loc>https://www.musabase.com/p/code-snippets.html</loc><lastmod>2025-12-28T18:47:41Z</lastmod></url>
   <url><loc>https://www.musabase.com/p/contact-us.html</loc><lastmod>2025-12-17T08:05:43Z</lastmod></url>
